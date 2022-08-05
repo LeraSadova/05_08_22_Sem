@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Напишите программу, которая на вход принимает число и выдаёт его квадрат (число умноженное на само себя).
+//Например:
+//4 -> 16
+//-3 -> 9
+//-7 -> 49
+//1. На вход получить число
+//2. Получить его квадрат
+// Console.WriteLine("Hello, World!");
+
+Console.Clear();
+Console.WriteLine("Введите целое число: ");
+
+//int num=int.Parse(Console.ReadLine()); //преобразовали тип string в int (т.е. ридлайн требует стринг) - используем int.Parse()
+int num=Convert.ToInt32(Console.ReadLine()); //- или так - это тоже конвертация
+//добавляем новую переменную
+int kvadrat=num*num;
+
+Console.Write($"Квадрат числа {num} равен {kvadrat}"); //НУЖЕН $ и добавляем весь вывод в одну строку
